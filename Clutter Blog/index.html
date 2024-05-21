@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <div class="small">
+
+        <div class="banner">
+
+            <div class="navbar">
+
+                <div class="icon">
+                    <h1 class="head"></h1>
+                    <h2 class="logo">CLutter <span> Blog</span></h2>
+                </div>
+
+                <div class="menu">
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="login.html">Log In</a></li>
+                        <li><a href="signup.html">Register</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            
+        <!-- About Clutter Blog focusing on MKU-->
+
+                <div class="content">
+
+                    <h1>CLutter <span> Blog</span></h1><br>
+
+                    <p class="par"> 
+                        CLutter Blog is a site that aims in matching people to institutions. We give information on universities for <br> you to choose whichever you find most appealing and most suitable to fulfil your educational needs. <br> Basically, we aim at helping everyone get information on possible higher education institutions they can apply to.<br>In this blog we will only be focusing on Mount Kenya University(MKU).<br> Want to get a view of more universities and colleges??</p>
+
+                    <button class="rm">
+
+                        <a href="signup.html">Read More</a>
+
+                    </button>
+
+                     <div class="ref">
+
+                        <section>
+
+                                <script>
+                                    var images = 
+                                    [
+                                
+                                        "img1.jpeg",
+                                        "img2.jpeg",
+                                        "img4.jpeg"
+                                        
+                                    ];
+                                    function shuffleArray(array)
+                                    {
+                                        for(var i=array.length-1;i>0;i--){
+                                            var j=Math.floor (Math.random() * (i+1));
+                                            var temp=array[i];
+                                            array[i]=array[j];
+                                            array[j]=temp;
+                                        }
+                                    }
+                                    function updateImage()
+                                    {
+                                        shuffleArray(src=images);
+                                        var imgElement=document.getElementById("randomImage");
+                                        imgElement.src= images[0];
+                                    }
+                                </script>
+
+                                <body onload="updateImage()">
+                                    <img id="randomImage"  style ="height:210px; width: 280px"/>
+                                </body>
+                            
+                        </section>
+
+                     </div>
+
+                </div>
+
+        </div>
+
+    </div>
+
+        <section class="footer">
+            <h3> About Us</h3>
+            <p>Here to match you with your university of choice.<br>Bringing the key to success closer to you</p>
+        </section>
+    
+    </body>
+
+</html>
